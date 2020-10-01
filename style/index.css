@@ -1,1 +1,207 @@
+
 /* Add CSS styling here */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Miriam+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+
+/* actual css start */
+
+body{
+    background-image: url(https://cdn.pixabay.com/photo/2018/04/06/15/17/pattern-3296033__340.png);
+}
+
+header{
+    /* font-family: 'Miriam Libre', sans-serif; */
+    font-family: 'Nanum Gothic Coding', monospace;
+}
+
+.hsec1{
+    border:1px solid black;
+    padding-bottom: 20px;
+    background-image: url(https://i.pinimg.com/originals/38/40/7c/38407cba69cbcc2f7d0e535d93cf3575.jpg);
+    
+}
+
+.title{
+    /* border:1px solid black; */
+
+    font-size:50px;
+    text-align:center;
+    color: cyan;
+    text-shadow:1px 1px azure;
+    padding-top:25px;
+    height:75px;
+    width:75%;
+    margin:10px auto;
+    /* background-color: lightskyblue; */
+
+}
+
+nav{
+    /* border:1px solid black; */
+
+    height:100px;
+    width:50%;
+    margin:0px auto;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+    align-items:center;
+    /* background-color: lightskyblue; */
+}
+
+.buttons{
+    border:1px solid black;
+
+    height:50px;
+    width:100px;
+    text-align:center;
+    text-decoration: none;
+    color:black;
+    background-color: aqua;
+
+}
+
+.hsec2 {
+    border:1px solid black;
+
+    height:200px;
+    width:95%;
+    margin:20px auto;
+    background-color: lightskyblue;
+}
+
+.intro{
+    border:1px solid black;
+
+    margin:10px auto;
+    width:50%;
+    text-align:center;
+    font-size: 30px;
+
+}
+
+.about {
+    border:1px solid black;
+
+    width:80%;
+    margin:10px auto;
+    font-size:20px;
+
+}
+
+.mainimage {
+    margin-top:20px;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-evenly;
+
+}
+
+.mainimage img{
+    max-height:300px;
+    max-width:100%;
+
+}
+
+.projectsec{
+    border:1px solid black;
+
+    width:100%;
+    height:600px;
+    margin:20px auto;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    align-content: center;
+
+}
+
+.projectsec img{
+    margin:10px;
+}
+
+footer{
+
+}
+
+.contactsec{
+    /* border:1px solid black; */
+
+    background-image: url(https://i.pinimg.com/originals/38/40/7c/38407cba69cbcc2f7d0e535d93cf3575.jpg);
+    height:150px;
+    width:100%;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+
+
+}
+
+.contactsec .last{
+    border:1px solid black;
+
+    height:50px;
+    width:100px;
+    font-family: 'Nanum Gothic Coding', monospace;
+    text-align:center;
+    text-decoration: none;
+    color:black;
+    background-color: aqua;
+
+
+}
