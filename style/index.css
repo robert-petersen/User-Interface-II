@@ -55,6 +55,7 @@ table {
 
 @import url('https://fonts.googleapis.com/css2?family=Miriam+Libre&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
 /* actual css start */
 
@@ -64,11 +65,12 @@ body{
 
 header{
     /* font-family: 'Miriam Libre', sans-serif; */
-    font-family: 'Nanum Gothic Coding', monospace;
+    /* font-family: 'Nanum Gothic Coding', monospace; */
+    font-family: 'Patrick Hand', cursive;
 }
 
 .hsec1{
-    border:1px solid black;
+    /* border:1px solid black; */
     padding-bottom: 20px;
     background-image: url(https://i.pinimg.com/originals/38/40/7c/38407cba69cbcc2f7d0e535d93cf3575.jpg);
     
@@ -103,30 +105,41 @@ nav{
 }
 
 .buttons{
-    border:1px solid black;
+    border:3px outset lightslategray;
 
-    height:50px;
+    margin:5px;
+    height:40px;
     width:100px;
+    padding-top:20px;
     text-align:center;
     text-decoration: none;
-    color:black;
-    background-color: aqua;
-
+    color:White;
+    /* background-color: aqua; */
+    background-image: url(https://thumbs.dreamstime.com/b/wood-wall-cartoon-seamless-pattern-brown-suitable-background-game-tilemap-asset-many-more-144558932.jpg);
+    background-size: 300px;
+}
+.buttons:hover{
+    border:3px inset lightskyblue;
+    background-image: url(https://image.freepik.com/free-vector/binary-code-background-blue-vector_88211-920.jpg);
+    color:cyan;
 }
 
-.hsec2 {
-    border:1px solid black;
 
+.hsec2 {
+    /* border:1px solid black; */
+
+    color:white;
     height:200px;
     width:95%;
     margin:20px auto;
-    background-color: lightskyblue;
+    background-image: url(https://i.pinimg.com/originals/38/40/7c/38407cba69cbcc2f7d0e535d93cf3575.jpg);
 }
 
 .intro{
-    border:1px solid black;
+    /* border:1px solid black; */
 
     margin:10px auto;
+    padding:20px;
     width:50%;
     text-align:center;
     font-size: 30px;
@@ -134,7 +147,7 @@ nav{
 }
 
 .about {
-    border:1px solid black;
+    /* border:1px solid black; */
 
     width:80%;
     margin:10px auto;
@@ -146,20 +159,43 @@ nav{
     margin-top:20px;
     display:flex;
     flex-flow:row nowrap;
-    justify-content:space-evenly;
+    justify-content:center;
 
 }
 
 .mainimage img{
-    max-height:300px;
+    margin:10px;
+    max-height:500px;
     max-width:100%;
 
 }
 
-.projectsec{
-    border:1px solid black;
+.projectsec .prodes{
+    /* border:1px solid black; */
+}
 
-    width:100%;
+.projectsec .prodes p{
+    border:3px outset green;
+    width:75%;
+    margin: 0 auto;
+    padding:5px;
+    text-align:center;
+    font-family: 'Patrick Hand', cursive;
+    color:rgb(95, 231, 106);
+    background-image: url(https://thumbs.dreamstime.com/b/seamless-pond-texture-lily-pads-surface-top-view-92890766.jpg);
+    background-size: 300px;
+}
+
+.projectsec .prodes p:hover{
+    border:3px inset cyan;
+    background-image: url(https://image.freepik.com/free-vector/binary-code-background-blue-vector_88211-920.jpg);
+    color:cyan;
+}
+
+.projectsec{
+    /* border:1px solid black; */
+
+    width:70%;
     height:600px;
     margin:20px auto;
     display:flex;
@@ -193,15 +229,22 @@ footer{
 }
 
 .contactsec .last{
-    border:1px solid black;
+    border:3px outset lightslategray;
 
-    height:50px;
+    padding-top:20px;
+    height:40px;
     width:100px;
     font-family: 'Nanum Gothic Coding', monospace;
     text-align:center;
     text-decoration: none;
-    color:black;
-    background-color: aqua;
+    color:white;
+    background-image: url(https://thumbs.dreamstime.com/b/wood-wall-cartoon-seamless-pattern-brown-suitable-background-game-tilemap-asset-many-more-144558932.jpg);
+    background-size: 300px;
 
+}
 
+.last:hover{
+    border:3px inset lightskyblue;
+    background-image: url(https://image.freepik.com/free-vector/binary-code-background-blue-vector_88211-920.jpg);
+    color:cyan;
 }
