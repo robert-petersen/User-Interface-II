@@ -21,7 +21,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -57,64 +57,73 @@ table {
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
-/* actual css start */
+/*base styles*/
+
+*{
+    border:1px solid black;
+}
 
 body{
     background-image: url(https://cdn.pixabay.com/photo/2018/04/06/15/17/pattern-3296033__340.png);
+    font-family: 'Patrick Hand', cursive;
+    font-size:62.5%;
+    color:White;
 }
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    text-align: center;
+    font-size: 3rem;
+}
+
+a{
+    text-decoration: none;
+    color:White;
+    font-size: 1.2rem;
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+/*Header section styles*/
 
 header{
-    /* font-family: 'Miriam Libre', sans-serif; */
-    /* font-family: 'Nanum Gothic Coding', monospace; */
-    font-family: 'Patrick Hand', cursive;
-}
-
-.hsec1{
-    /* border:1px solid black; */
-    padding-bottom: 20px;
     background-image: url(https://i.pinimg.com/originals/38/40/7c/38407cba69cbcc2f7d0e535d93cf3575.jpg);
-    
+    font-size:1.2rem;
 }
 
-.title{
-    /* border:1px solid black; */
+.header-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+}
 
-    font-size:50px;
-    text-align:center;
-    color: cyan;
-    text-shadow:1px 1px azure;
-    padding-top:25px;
-    height:75px;
-    width:75%;
-    margin:10px auto;
-    /* background-color: lightskyblue; */
-
+.header-container h1{
+    width:50%;
+    margin:1% 1%;
+    font-size:3rem;
 }
 
 nav{
-    /* border:1px solid black; */
-
-    height:100px;
     width:50%;
-    margin:0px auto;
+    margin-bottom: 1%;
     display:flex;
     flex-flow:row nowrap;
-    justify-content:center;
+    justify-content:flex-start;
     align-items:center;
-    /* background-color: lightskyblue; */
 }
 
 .buttons{
     border:3px outset lightslategray;
-
     margin:5px;
-    height:40px;
     width:100px;
-    padding-top:20px;
     text-align:center;
-    text-decoration: none;
-    color:White;
-    /* background-color: aqua; */
+    padding:10px;
     background-image: url(https://thumbs.dreamstime.com/b/wood-wall-cartoon-seamless-pattern-brown-suitable-background-game-tilemap-asset-many-more-144558932.jpg);
     background-size: 300px;
 }
@@ -124,123 +133,117 @@ nav{
     color:cyan;
 }
 
-
-.hsec2 {
-    /* border:1px solid black; */
-
-    color:white;
-    height:200px;
-    width:95%;
-    margin:20px auto;
-    background-image: url(https://i.pinimg.com/originals/38/40/7c/38407cba69cbcc2f7d0e535d93cf3575.jpg);
-}
+/*Intro section styles*/
 
 .intro{
-    /* border:1px solid black; */
-
-    margin:10px auto;
-    padding:20px;
-    width:50%;
-    text-align:center;
-    font-size: 30px;
-
-}
-
-.about {
-    /* border:1px solid black; */
-
-    width:80%;
-    margin:10px auto;
-    font-size:20px;
-
-}
-
-.mainimage {
-    margin-top:20px;
+    width:90%;
+    margin:5% auto;
     display:flex;
     flex-flow:row nowrap;
     justify-content:center;
-
+    align-content: center;
+    background-image: url(https://i.pinimg.com/originals/38/40/7c/38407cba69cbcc2f7d0e535d93cf3575.jpg);
 }
 
-.mainimage img{
-    margin:10px;
-    max-height:500px;
-    max-width:100%;
-
+.intro-text {
+    font-size: 1.6rem;
+    width:50%;
+    margin:1%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-evenly;
 }
 
-.projectsec .prodes{
-    /* border:1px solid black; */
+.intro-text h2, p{
+    margin:1% 0;
 }
 
-.projectsec .prodes p{
+.intro-image {
+    width:50%;
+    margin:1%;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+    background-image: url("/photos/fogsmall.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*Project section styles*/
+
+.projectsec{
+    width:100%;
+    margin-bottom:5%;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    align-content: center;
+}
+
+.project-container{
+    width:25%;
+    margin:1%;
+    background-image: url(https://i.pinimg.com/originals/38/40/7c/38407cba69cbcc2f7d0e535d93cf3575.jpg);
+}
+
+.project-image-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin:5px;
+}
+
+.project-buttons{
+    margin:1%;
+}
+
+.projectsec .project-container a{
     border:3px outset green;
-    width:75%;
-    margin: 0 auto;
-    padding:5px;
+    margin:5% 0;
+    padding:10px;
     text-align:center;
-    font-family: 'Patrick Hand', cursive;
     color:rgb(95, 231, 106);
     background-image: url(https://thumbs.dreamstime.com/b/seamless-pond-texture-lily-pads-surface-top-view-92890766.jpg);
     background-size: 300px;
 }
 
-.projectsec .prodes p:hover{
+.projectsec .project-container a:hover{
     border:3px inset cyan;
     background-image: url(https://image.freepik.com/free-vector/binary-code-background-blue-vector_88211-920.jpg);
     color:cyan;
 }
 
-.projectsec{
-    /* border:1px solid black; */
 
-    width:70%;
-    height:600px;
-    margin:20px auto;
-    display:flex;
-    flex-flow:row wrap;
-    justify-content:center;
-    align-content: center;
-
-}
-
-.projectsec img{
-    margin:10px;
-}
+/*Footer section styles*/
 
 footer{
-
+    margin-top:5%;
+    font-size: 1.2rem;
+    background-image: url(https://i.pinimg.com/originals/38/40/7c/38407cba69cbcc2f7d0e535d93cf3575.jpg);
 }
 
 .contactsec{
-    /* border:1px solid black; */
-
-    background-image: url(https://i.pinimg.com/originals/38/40/7c/38407cba69cbcc2f7d0e535d93cf3575.jpg);
-    height:150px;
-    width:100%;
+    width:50%;
+    margin:0 auto;
     display:flex;
     flex-flow:row nowrap;
     justify-content: center;
     align-content: center;
     align-items:center;
-
-
 }
 
 .contactsec .last{
     border:3px outset lightslategray;
-
-    padding-top:20px;
-    height:40px;
-    width:100px;
-    font-family: 'Nanum Gothic Coding', monospace;
+    padding:10px;
+    margin:5% 0;
+    width:150px;
     text-align:center;
-    text-decoration: none;
-    color:white;
     background-image: url(https://thumbs.dreamstime.com/b/wood-wall-cartoon-seamless-pattern-brown-suitable-background-game-tilemap-asset-many-more-144558932.jpg);
     background-size: 300px;
-
 }
 
 .last:hover{
@@ -248,3 +251,15 @@ footer{
     background-image: url(https://image.freepik.com/free-vector/binary-code-background-blue-vector_88211-920.jpg);
     color:cyan;
 }
+
+/* media query max 800px */
+
+@media (max-width:800px){
+
+}/*end of 800px media query*/
+
+/* media query max 500px */
+
+@media (max-width:500px){
+
+}/*end of 500px media query*/
