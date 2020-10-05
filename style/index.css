@@ -1,1 +1,313 @@
+
 /* Add CSS styling here */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	/* border: 0; */
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Miriam+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+/*base styles*/
+
+/* *{
+    border:1px solid black;
+} */
+
+body{
+    background-image: url(https://cdn.pixabay.com/photo/2018/04/06/15/17/pattern-3296033__340.png);
+    font-family: 'Patrick Hand', cursive;
+    font-size:62.5%;
+    color:White;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    text-align: center;
+    font-size: 3rem;
+}
+
+a{
+    text-decoration: none;
+    color:White;
+    font-size: 1.2rem;
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+/*Header section styles*/
+
+header{
+    background-image: url(https://i.pinimg.com/originals/38/40/7c/38407cba69cbcc2f7d0e535d93cf3575.jpg);
+    font-size:1.2rem;
+}
+
+.header-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.header-container h1{
+    width:50%;
+    margin:1% 1%;
+    font-size:3rem;
+}
+
+nav{
+    width:50%;
+    margin-bottom: 1%;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+.buttons{
+    border:3px outset lightslategray;
+    margin:5px;
+    width:100px;
+    text-align:center;
+    padding:10px;
+    background-image: url(https://thumbs.dreamstime.com/b/wood-wall-cartoon-seamless-pattern-brown-suitable-background-game-tilemap-asset-many-more-144558932.jpg);
+    background-size: 300px;
+}
+.buttons:hover{
+    border:3px inset lightskyblue;
+    background-image: url(https://image.freepik.com/free-vector/binary-code-background-blue-vector_88211-920.jpg);
+    color:cyan;
+}
+
+/*Intro section styles*/
+
+.intro{
+    width:90%;
+    margin:5% auto;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+    align-content: center;
+    background-image: url(https://i.pinimg.com/originals/38/40/7c/38407cba69cbcc2f7d0e535d93cf3575.jpg);
+}
+
+.intro-text {
+    font-size: 1.6rem;
+    width:50%;
+    margin:1%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-evenly;
+}
+
+.intro-text h2, p{
+    margin:1% 0;
+}
+
+.intro-image {
+    width:50%;
+    margin:1%;
+    /* display:flex;
+    flex-flow:row nowrap;
+    justify-content:center; */
+    background-image: url("/photos/fogsmall.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*Project section styles*/
+
+.projectsec{
+    margin-bottom:5%;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    align-content: center;
+    align-items: center;
+}
+
+.project-container{
+    width:25%;
+    margin:1%;
+    background-image: url(https://i.pinimg.com/originals/38/40/7c/38407cba69cbcc2f7d0e535d93cf3575.jpg);
+}
+
+.project-image-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin:5px;
+}
+
+.project-info{
+    margin:3%;
+}
+
+.project-buttons{
+    margin:5px auto;
+    width:50%;
+    display:flex;
+    justify-content: center;
+}
+
+.projectsec .project-container a{
+    border:3px outset green;
+    margin:5% 0;
+    padding:10px;
+    text-align:center;
+    color:rgb(95, 231, 106);
+    background-image: url(https://thumbs.dreamstime.com/b/seamless-pond-texture-lily-pads-surface-top-view-92890766.jpg);
+    background-size: 300px;
+}
+
+.projectsec .project-container a:hover{
+    border:3px inset cyan;
+    background-image: url(https://image.freepik.com/free-vector/binary-code-background-blue-vector_88211-920.jpg);
+    color:cyan;
+}
+
+
+/*Footer section styles*/
+
+footer{
+    margin-top:5%;
+    font-size: 1.2rem;
+    background-image: url(https://i.pinimg.com/originals/38/40/7c/38407cba69cbcc2f7d0e535d93cf3575.jpg);
+}
+
+.contactsec{
+    width:50%;
+    margin:0 auto;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+}
+
+.contactsec .last{
+    border:3px outset lightslategray;
+    padding:10px;
+    margin:5% 0;
+    width:150px;
+    text-align:center;
+    background-image: url(https://thumbs.dreamstime.com/b/wood-wall-cartoon-seamless-pattern-brown-suitable-background-game-tilemap-asset-many-more-144558932.jpg);
+    background-size: 300px;
+}
+
+.last:hover{
+    border:3px inset lightskyblue;
+    background-image: url(https://image.freepik.com/free-vector/binary-code-background-blue-vector_88211-920.jpg);
+    color:cyan;
+}
+
+/* media query max 800px */
+
+@media (max-width:800px){
+
+}/*end of 800px media query*/
+
+/* media query max 500px */
+
+@media (max-width:500px){
+
+    .header-container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-container h1{
+        width:90%;
+        text-align: center;
+    }
+
+    nav{
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .intro{
+        width:80%;
+        margin:10% auto;
+        flex-flow:column nowrap;
+        align-items: center;
+    }
+
+    .intro-text {
+        width:90%;
+        margin:1%;
+    }
+
+    .intro-image {
+        width:90%;
+    }
+
+    .projectsec{
+        flex-flow:column wrap;
+    }
+
+    .project-container{
+        width:80%;
+    }
+
+}/*end of 500px media query*/
