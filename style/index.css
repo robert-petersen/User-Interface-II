@@ -162,9 +162,9 @@ nav{
 .intro-image {
     width:50%;
     margin:1%;
-    display:flex;
+    /* display:flex;
     flex-flow:row nowrap;
-    justify-content:center;
+    justify-content:center; */
     background-image: url("/photos/fogsmall.jpg");
     background-position: center;
     background-size: contain;
@@ -174,12 +174,12 @@ nav{
 /*Project section styles*/
 
 .projectsec{
-    width:100%;
     margin-bottom:5%;
     display:flex;
     flex-flow:row wrap;
     justify-content:center;
     align-content: center;
+    align-items: center;
 }
 
 .project-container{
@@ -197,8 +197,15 @@ nav{
     margin:5px;
 }
 
+.project-info{
+    margin:3%;
+}
+
 .project-buttons{
-    margin:1%;
+    margin:5px auto;
+    width:50%;
+    display:flex;
+    justify-content: center;
 }
 
 .projectsec .project-container a{
@@ -261,5 +268,46 @@ footer{
 /* media query max 500px */
 
 @media (max-width:500px){
+
+    .header-container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-container h1{
+        width:90%;
+        text-align: center;
+    }
+
+    nav{
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .intro{
+        width:80%;
+        margin:10% auto;
+        flex-flow:column nowrap;
+        align-items: center;
+    }
+
+    .intro-text {
+        width:90%;
+        margin:1%;
+    }
+
+    .intro-image {
+        width:90%;
+    }
+
+    .projectsec{
+        flex-flow:column wrap;
+    }
+
+    .project-container{
+        width:80%;
+    }
 
 }/*end of 500px media query*/
